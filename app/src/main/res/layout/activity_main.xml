@@ -1,7 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- mi serve per il messaggio dinamico, ossia può cambiare durante l'esecuzione dell'app -->
+    <TextView
+        android:id="@+id/textMessaggio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:textColor="#1A237E"
+        android:layout_marginBottom="16dp" />
+    
+    <!-- mi serve per il nome utente / categoria -->
+    <EditText
+        android:id="@+id/editTextNomeUtente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Es. Netflix, Gmail, Università" />
+
+    <!-- bottone per generare -->
+    <Button
+        android:id="@+id/btnGenera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Genera password"
+        android:layout_marginTop="16dp" />
+
+    <!-- password generata -->
+    <TextView
+        android:id="@+id/textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_marginTop="16dp" />
+
+    <!-- Bottone per copiare -->
+    <Button
+        android:id="@+id/btnCopia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Copia"
+        android:layout_marginTop="16dp" />
+
+    <!-- Contatore password salvate -->
+    <TextView
+        android:id="@+id/textTotale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Totale passowrd salvate: 0"
+        android:layout_marginTop="20dp"
+        android:textColor="#2E7D32" />
 
 </LinearLayout>
