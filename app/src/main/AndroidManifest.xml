@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:label="Passafe"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SimulationPassafe">
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
         <activity
             android:name=".MainActivity"
             android:exported="true">
