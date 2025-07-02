@@ -1,4 +1,4 @@
-package com.example.simulationpassafe
+package com.example.passafe
 
 import android.os.Bundle
 import android.widget.*
