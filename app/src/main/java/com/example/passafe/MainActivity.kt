@@ -12,11 +12,11 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-// HashMap per associare un nome utente ad una password
+// HashMap per associare un nome utente ad una password -->
     private val mappaUtenti = HashMap<String, String>()
     private var totaleSalvate = 0
 
-//Metodo chiamato alla creazione dell'Activity
+ // Metodo chiamato alla creazione dell'Activity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

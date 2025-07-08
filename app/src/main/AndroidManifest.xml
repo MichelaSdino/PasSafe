@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-// File manifest: descrive la struttura e le autorizzazioni dell'app
+<!--    File manifest: descrive la struttura e le autorizzazioni dell'app -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.passafe">
 
@@ -10,12 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
 
-// Dichiarazione della MainActivity
+<!-- Dichiarazione della MainActivity -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
 
-// Indica che questa Activity è il punto di ingresso
+<!-- Indica che questa Activity è il punto di ingresso -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
