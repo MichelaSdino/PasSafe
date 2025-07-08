@@ -12,13 +12,16 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
+// HashMap per associare un nome utente ad una password
     private val mappaUtenti = HashMap<String, String>()
     private var totaleSalvate = 0
 
+//Metodo chiamato alla creazione dell'Activity
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+// Collegamento dei widget dal layout XML al codice
         val campoNome = findViewById<EditText>(R.id.editTextNomeUtente)
         val bottoneGenera = findViewById<Button>(R.id.btnGenera)
         val testoPassword = findViewById<TextView>(R.id.textPassword)
@@ -26,6 +29,7 @@ class MainActivity : AppCompatActivity() {
         val messaggioTextView = findViewById<TextView>(R.id.textMessaggio)
         val totaleTextView = findViewById<TextView>(R.id.textTotale)
 
+// Listener per il bottone "Genera Password"
         bottoneGenera.setOnClickListener {
             val nomeUtente = campoNome.text.toString()
 
@@ -42,6 +46,7 @@ class MainActivity : AppCompatActivity() {
                     nuovaPassword
                 }
 
+// Mostra la password generata/recuperata e aggiorna il messaggio
                 testoPassword.text = password
                 messaggioTextView.text = "Password per $nomeUtente:"
             } else {
@@ -49,6 +54,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+// Listener per il bottone "Copia"
         bottoneCopia.setOnClickListener {
             val passwordDaCopiare = testoPassword.text.toString()
             if (passwordDaCopiare.isNotEmpty()) {
@@ -62,6 +68,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+// Funzione per generare una password casuale
     private fun generaPassword(): String {
         val caratteri = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*"
         var password = ""
