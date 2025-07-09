@@ -1,14 +1,14 @@
 package com.example.passafe
 
-import android.content.ClipData
-import android.content.ClipboardManager
-import android.content.Context
-import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
+import android.content.ClipData // Per creare un oggetto da copiare negli appunti
+import android.content.ClipboardManager // Per accedere al sistema copia/incolla
+import android.content.Context // Fornisce accesso a servizi di sistema
+import android.os.Bundle // Per passare dati tra attività e gestire lo stato
+import android.widget.Button // Widget per i bottoni
+import android.widget.EditText // Campo di input testuale
+import android.widget.TextView // Per visualizzare testi statici
+import android.widget.Toast // Per mostrare messaggi brevi all'utente
+import androidx.appcompat.app.AppCompatActivity // Base per creare un Activity
 
 class MainActivity : AppCompatActivity() {
 
